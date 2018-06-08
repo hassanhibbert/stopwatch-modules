@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stop Watch</title>
+</head>
+<body>
+<div class="stopwatch">
+  <button class="sw-start-button">start</button>
+  <button class="sw-stop-button">stop</button>
+  <button class="sw-reset-button">reset</button>
+  <br><br>
+  <div class="display">
+    duration: <span class="sw-duration-stream">0</span>
+  </div>
+</div>
+<script src="stopwatch.js"></script>
+<script src="stopwatch.ui.js"></script>
+<script>
+  StopWatchUI.init();
+</script>
+</body>
+</html>
