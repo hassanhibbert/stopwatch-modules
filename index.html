@@ -5,19 +5,29 @@
   <title>Stop Watch</title>
 </head>
 <body>
-<div class="stopwatch">
-  <button class="sw-start-button">start</button>
-  <button class="sw-stop-button">stop</button>
-  <button class="sw-reset-button">reset</button>
+<div class="stopwatch" data-stopwatch>
+  <button data-start class="sw-start-button">start</button>
+  <button data-stop class="sw-stop-button">stop</button>
+  <button data-reset class="sw-reset-button">reset</button>
   <br><br>
   <div class="display">
-    duration: <span class="sw-duration-stream">0</span>
+    duration: <span data-duration class="sw-duration-stream">0</span>
+  </div>
+</div>
+<br><br><br>
+<div class="stopwatch" data-stopwatch>
+  <button data-start class="sw-start-button">start</button>
+  <button data-stop class="sw-stop-button">stop</button>
+  <button data-reset class="sw-reset-button">reset</button>
+  <br><br>
+  <div class="display">
+    duration: <span data-duration class="sw-duration-stream">0</span>
   </div>
 </div>
 <script src="stopwatch.js"></script>
 <script src="stopwatch.ui.js"></script>
 <script>
-  StopWatchUI.init();
+  StopWatchUI('.stopwatch');
 </script>
 </body>
 </html>

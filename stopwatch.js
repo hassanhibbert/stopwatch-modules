@@ -22,6 +22,9 @@ const StopWatch = (function () {
         this.duration += utils.calculateDuration(this.startTime, new Date());
       }
     },
+    isRunning() {
+      return this.running;
+    },
     reset() {
       this.startTime = null;
       this.running = false;
